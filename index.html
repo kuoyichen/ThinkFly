@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThinkFly｜教育用四軸無人機</title>
+<meta name="description" content="ThinkFly 是一個教育用四軸無人機專案，結合程式開發、書籍教材與線上資源，讓學生從動手做中學習飛行原理與程式設計。">
+<style>
+  :root{
+    --bg:#f7f9fc; --surface:#ffffff; --text:#1b2533; --muted:#5b6778;
+    --accent:#1e6fd9; --accent-soft:#e6f0fd; --border:#e2e8f0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f141b; --surface:#171e28; --text:#e6ebf2; --muted:#9aa6b8;
+      --accent:#5aa2ff; --accent-soft:#1a2a40; --border:#273242;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.7}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  header{padding:72px 0 48px;text-align:center}
+  .logo{font-size:56px;line-height:1}
+  h1{font-size:clamp(32px,6vw,48px);margin:12px 0 8px;letter-spacing:.02em}
+  .tagline{font-size:clamp(17px,2.6vw,20px);color:var(--muted);margin:0 auto;max-width:600px}
+  .btns{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.ghost{color:var(--accent)}
+  section{padding:40px 0}
+  h2{font-size:26px;margin:0 0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px}
+  .card .icon{font-size:28px}
+  .card h3{margin:8px 0 6px;font-size:19px}
+  .card p{margin:0;color:var(--muted)}
+  ol.steps{padding-left:1.3em;margin:0}
+  ol.steps li{margin:6px 0}
+  .note{background:var(--accent-soft);border-radius:14px;padding:20px 22px}
+  footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--border);margin-top:24px}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="logo" aria-hidden="true">🛸</div>
+    <h1>ThinkFly</h1>
+    <p class="tagline">教育用四軸無人機專案：從組裝、程式到飛行，邊做邊學 STEM。</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/kuoyichen/ThinkFly">GitHub 專案</a>
+      <a class="btn ghost" href="#about">了解更多</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>關於 ThinkFly</h2>
+      <p>ThinkFly 是一個為教學設計的四軸無人機專案。我們希望讓學生透過親手操作一台真實的無人機，理解飛行原理、感測器與控制系統，並在過程中學會寫程式解決問題。</p>
+    </section>
+
+    <section>
+      <h2>專案內容</h2>
+      <div class="grid">
+        <div class="card"><div class="icon">💻</div><h3>程式開發</h3><p>無人機的韌體與控制程式，以及給學生使用的程式範例，從基礎到進階循序漸進。</p></div>
+        <div class="card"><div class="icon">📘</div><h3>書籍教材</h3><p>配合課程撰寫的教學書籍，說明飛行原理、硬體架構與每一個實作單元。</p></div>
+        <div class="card"><div class="icon">🌐</div><h3>網站資源</h3><p>提供專案介紹、教學資源與最新消息，方便老師與學生隨時查閱。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>學習目標</h2>
+      <div class="grid">
+        <div class="card"><h3>認識飛行原理</h3><p>升力、姿態與四顆馬達如何協同控制方向。</p></div>
+        <div class="card"><h3>感測與控制</h3><p>了解陀螺儀、加速度計與回饋控制的概念。</p></div>
+        <div class="card"><h3>程式思維</h3><p>用程式讓無人機完成任務，培養拆解問題的能力。</p></div>
+        <div class="card"><h3>動手實作</h3><p>從組裝、測試到除錯，體驗完整的工程流程。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>開始使用</h2>
+      <div class="note">
+        <ol class="steps">
+          <li>到 <a href="https://github.com/kuoyichen/ThinkFly">GitHub 專案</a> 取得程式碼與文件。</li>
+          <li>依照教材準備無人機硬體並完成組裝。</li>
+          <li>跟著單元範例撰寫程式，逐步完成飛行任務。</li>
+        </ol>
+        <p style="margin:12px 0 0;color:var(--muted)">更多教材與程式內容正在整理中，敬請期待。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © ThinkFly · <a href="https://github.com/kuoyichen/ThinkFly">github.com/kuoyichen/ThinkFly</a>
+  </footer>
+</body>
+</html>
